@@ -31,6 +31,7 @@ function OneLine(props) {
 
     const handleEditLine = () => {
         dispatch(saveTableLineAction.request({data:{name, surname, key, id: props.oneLineData._id}}) )
+        setReadonly(!readonly)
     }
 
     const handleDeleteLine = () => {
